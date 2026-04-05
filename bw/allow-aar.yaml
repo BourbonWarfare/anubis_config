@@ -1,0 +1,6 @@
+- name: allow-aar
+  action: ALLOW
+  expression:
+    all:
+      - host.startsWith("aar")
+      - path.startsWith("/style/") || path.startsWith("/leaflet/") || path.startsWith("/scripts/")
