@@ -3,7 +3,4 @@
   expression:
     all:
       - host.startsWith("forums.")
-      - any:
-        - path.startsWith("/styles/")
-        - path.startsWith("/ext/")
-        - path.startsWith("/assets/")
+      - 'path.startsWith("/styles/") || path.startsWith("/ext/") || path.startsWith("/assets/")''
