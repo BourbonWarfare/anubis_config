@@ -1,4 +1,5 @@
 - name: allow-aar
   action: ALLOW
   expression:
-    - host.startsWith("aar")
+    all:
+      - host.startsWith("aar")
