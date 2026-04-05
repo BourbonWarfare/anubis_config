@@ -3,4 +3,4 @@
   expression:
     all:
       - host.startsWith("aar")
-      - path.startsWith("/style/") || path.startsWith("/leaflet/") || path.startsWith("/scripts/") || path.startsWith("/data/") || path.startsWith("/images/")
+      - path.startsWith("/style/") || path.startsWith("/leaflet/") || path.startsWith("/scripts/") || path.startsWith("/data/") || path.startsWith("/images/") || path.startsWith("/api/")
