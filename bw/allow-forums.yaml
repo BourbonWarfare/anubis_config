@@ -1,6 +1,13 @@
-- name: allow-forums
+- name: allow-forum-assets
   action: ALLOW
   expression:
     all:
       - host.startsWith("forums")
       - path.startsWith("/styles/") || path.startsWith("/ext/") || path.startsWith("/assets/")
+- name: allow-forum-modify
+  action: ALLOW
+  expression:
+    all:
+      - host.startsWith("forums")
+      - (method == 'POST' || method == 'PUT' || method == 'DELETE')
+

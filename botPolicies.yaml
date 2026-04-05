@@ -234,5 +234,5 @@ thresholds:
     action: CHALLENGE
     challenge:
       # https://anubis.techaro.lol/docs/admin/configuration/challenges/proof-of-work
-      algorithm: fast
+      algorithm: slow
       difficulty: 10
