@@ -2,5 +2,5 @@
   action: ALLOW
   expression:
     all:
-      - 'host.startsWith("forums.")'
-      - '(path.startsWith("/styles/") || path.startsWith("/ext/") || path.startsWith("/assets/"))'
+      - host.startsWith("forums")
+      - path.startsWith("/styles/") || path.startsWith("/ext/") || path.startsWith("/assets/")
