@@ -2,5 +2,5 @@
   action: ALLOW
   expression:
     all:
-      - host.startsWith("bourbonwarfare.com")
-      - path.startsWith("/assets/")
+      - host.startsWith("wiki")
+      - path.startsWith("/w/") || path.startsWith("/wiki/")
