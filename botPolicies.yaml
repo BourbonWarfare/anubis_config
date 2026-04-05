@@ -14,7 +14,7 @@ bots:
   # You can import the entire default config with this macro:
   # - import: (data)/meta/default-config.yaml
 
-  - import: bw/allow-forums.yaml
+  - import: B:/web/_configs/anubis_config/bw/allow-forums.yaml
 
   # Pathological bots to deny
   - # This correlates to data/bots/_deny-pathological.yaml in the source tree
