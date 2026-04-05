@@ -43,7 +43,7 @@ bots:
 
   # Allow common "keeping the internet working" routes (well-known, favicon, robots.txt)
   - import: (data)/common/keep-internet-working.yaml
-
+G
   # # Punish any bot with "bot" in the user-agent string
   # # This is known to have a high false-positive rate, use at your own risk
   # - name: generic-bot-catchall
@@ -163,7 +163,7 @@ openGraph:
 # the most aggressive scraper bots seem to really, really, want an HTTP 200 and
 # will stop sending requests once they get it.
 status_codes:
-  CHALLENGE: 200
+  CHALLENGE: 403
   DENY: 200
 
 # Anubis can store temporary data in one of a few backends. See the storage
