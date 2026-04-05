@@ -1,3 +1,4 @@
 - import: B:/web/_configs/anubis_config/bw/allow-aar.yaml
 - import: B:/web/_configs/anubis_config/bw/allow-forums.yaml
 - import: B:/web/_configs/anubis_config/bw/allow-main.yaml
+- import: B:/web/_configs/anubis_config/bw/allow-wiki.yaml
