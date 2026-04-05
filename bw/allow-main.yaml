@@ -1,0 +1,6 @@
+- name: allow-main-page
+  action: ALLOW
+  expression:
+    all:
+      - host.startsWith("bourbonwarfare.com")
+      - path.startsWith("/assets/")
