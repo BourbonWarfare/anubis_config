@@ -1,0 +1,6 @@
+- name: allow-backend-staging-api
+  action: ALLOW
+  expression:
+    all:
+      - host.startsWith("staging")
+      - path.startsWith("/api/")
