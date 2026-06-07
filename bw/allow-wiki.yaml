@@ -1,6 +1,12 @@
-- name: allow-wiki
+- name: allow-wiki-assets
   action: ALLOW
   expression:
     all:
       - host.startsWith("wiki")
-      - path.startsWith("/w/") || path.startsWith("/wiki/")
+      - path.startsWith("/w/") || path.startsWith("/load.php") || path.startsWith("/resources/") || path.startsWith("/skins/") || path.startsWith("/extensions/") || path.startsWith("/images/")
+- name: allow-wiki-age
+  action: ALLOW
+  expression:
+  all:
+    - host.startsWith("wiki")
+    - host.startsWith("wiki")

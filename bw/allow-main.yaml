@@ -1,6 +1,12 @@
+- name: allow-main-assets
+  action: ALLOW
+  expression:
+    all:
+      - host == "bourbonwarfare.com" || host == "www.bourbonwarfare.com"
+      - path.startsWith("/assets/")
 - name: allow-main-page
   action: ALLOW
   expression:
     all:
-      - host.startsWith("bourbonwarfare.com") || host.startsWith("www.bourbonwarfare.com")
-      - path.startsWith("/assets/")
+      - host == "bourbonwarfare.com" || host == "www.bourbonwarfare.com"
+      - path == "/"
