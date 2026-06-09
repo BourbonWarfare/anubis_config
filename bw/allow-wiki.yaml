@@ -9,5 +9,5 @@
   expression:
   all:
     - host.startsWith("wiki")
-    - method == "GET"
-    - path == "/" || path == "/wiki/" || path == "/w/"
+    - 'method == "GET"'
+    - 'path == "/" || path == "/wiki/" || path == "/w/"'
