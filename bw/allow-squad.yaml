@@ -1,0 +1,5 @@
+- name: allow-squad
+  action: ALLOW
+  expression:
+    all:
+      - host.startsWith("squad")

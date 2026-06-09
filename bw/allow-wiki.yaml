@@ -4,9 +4,10 @@
     all:
       - host.startsWith("wiki")
       - path.startsWith("/w/") || path.startsWith("/load.php") || path.startsWith("/resources/") || path.startsWith("/skins/") || path.startsWith("/extensions/") || path.startsWith("/images/")
-- name: allow-wiki-age
-  action: ALLOW
+- name: allow-wiki-page
+  action: CHALLENGE
   expression:
   all:
     - host.startsWith("wiki")
-    - host.startsWith("wiki")
+    - method == "GET"
+    - path == "/" || path == '/wiki/' || path == '/w/'

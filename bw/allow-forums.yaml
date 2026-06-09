@@ -3,7 +3,7 @@
   expression:
     all:
       - host.startsWith("forums")
-      - - path.startsWith("/styles/") || path.startsWith("/ext/") || path.startsWith("/assets/") || path.startsWith("/images/") || path.startsWith("/vendor/") || path.startsWith("/cron.php") || path.startsWith("/download/file.php")
+      - path.startsWith("/styles/") || path.startsWith("/ext/") || path.startsWith("/assets/") || path.startsWith("/images/") || path.startsWith("/vendor/") || path.startsWith("/cron.php") || path.startsWith("/download/file.php")
 - name: allow-forum-modify
   action: ALLOW
   expression:
@@ -11,9 +11,8 @@
       - host.startsWith("forums")
       - (method == 'POST' || method == 'PUT' || method == 'DELETE')
 - name: allow-forum-pages
-  action: ALLOW
+  action: CHALLENGE
   expression:
     all:
       - host.startsWith("forums")
       - method == "GET"
-      - path == "/" || path.startsWith("/app.php") || path.startsWith("/viewforum.php") || path.startsWith("/viewtopic.php") || path.startsWith("/index.php") || path.startsWith("/search.php") || path.startsWith("/memberlist.php") || path.startsWith("/ucp.php")

@@ -5,7 +5,7 @@
       - host == "bourbonwarfare.com" || host == "www.bourbonwarfare.com"
       - path.startsWith("/assets/")
 - name: allow-main-page
-  action: ALLOW
+  action: CHALLENGE
   expression:
     all:
       - host == "bourbonwarfare.com" || host == "www.bourbonwarfare.com"
