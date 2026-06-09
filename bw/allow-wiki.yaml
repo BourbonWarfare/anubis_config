@@ -7,7 +7,7 @@
 - name: allow-wiki-page
   action: CHALLENGE
   expression:
-  all:
-    - host.startsWith("wiki")
-    - 'method == "GET"'
-    - 'path == "/" || path == "/wiki/" || path == "/w/"'
+    all:
+      - host.startsWith("wiki")
+      - method == "GET"
+      - path == "/" || path == "/wiki/" || path == "/w/"
