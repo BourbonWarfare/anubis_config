@@ -4,3 +4,4 @@
 - import: B:/web/_configs/anubis_config/bw/allow-wiki.yaml
 - import: B:/web/_configs/anubis_config/bw/allow-backend.yaml
 - import: B:/web/_configs/anubis_config/bw/allow-squad.yaml
+- import: B:/web/_configs/anubis_config/bw/allow-mods.yaml

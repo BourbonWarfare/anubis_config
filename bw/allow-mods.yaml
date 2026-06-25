@@ -1,0 +1,5 @@
+- name: allow-mods
+  action: ALLOW
+  expression:
+    all:
+      - host.startsWith("mods")
