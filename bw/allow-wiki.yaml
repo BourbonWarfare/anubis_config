@@ -10,4 +10,4 @@
     all:
       - host.startsWith("wiki")
       - method == "GET"
-      - path == "/" || path == "/wiki/" || path == "/w/"
+      - path == "" || path == "/" || path == "/wiki/" || path == "/w/"
