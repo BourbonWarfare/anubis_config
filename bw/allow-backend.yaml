@@ -5,10 +5,16 @@
       - host.startsWith("staging") || host.startsWith("hub")
       - path.startsWith("/api/")
 
+- name: allow-backend-static
+  action: ALLOW
+  expression:
+    all:
+      - host.startsWith("staging") || host.startsWith("hub")
+      - path.startsWith("/static/")
+
 - name: challenge-backend-web
   action: CHALLENGE
   expression:
     all:
       - host.startsWith("staging") || host.startsWith("hub")
       - '!path.startsWith("/api/")'
-
